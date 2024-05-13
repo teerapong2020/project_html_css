@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+  </head>
+  <body>
+    <nav >
+      <ul class="flex justify-between bg-blue-950 text-white ">
+        <li>
+          <a href="#"
+            ><img class="bg-gray-300" src="/assets/logo.png" alt=""
+          /></a>
+        </li>
+        <!-- burger bar -->
+        <div id="burger" class="flex mt-3 gap-6 max-md:hidden "> 
+          <li><a class="underline  " href="/Rent .html">บริการเช่า</a></li>
+          <li><a class="hover:underline" href="/buy.html">ซื้อ</a></li>
+          <li><a class="hover:underline" href="/buy.html">ขาย</a></li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-2/3"
+                src="/assets/🦆 icon _United States_.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img class="w-2/3" src="/assets/login.png" alt="" /></a>
+          </li>
+        </div>
+        <li class="flex items-center mr-5 md:hidden">
+          <a href=""><img src="/assets/menu.png" alt=""></a></li>
+      </ul>
+    </nav>
+    <hero>
+      <div class="relative">
+        <img class="absolute" src="/assets/bg-rent.png" alt="" />
+        <div class="flex justify-center bg-gray-300 ">
+          <h1 class="relative text-white  font-black text-4xl mt-20 max-md:mt-2  ">บริการเช่ารถยนต์</h1>
+        </div>
+      </div>
+    </hero>
+    <section class="my-52 mx-8 md:flex justify-center gap-16  ">
+      <!-- car1 -->
+      <div>
+        <img  src="/assets/benz/GLC 300 4MATIC/GLC 300 4MATIC.png" alt=''/>
+        <h3 class="mx-8 my-4 font-black">BENZ GLC 300 4MATIC</h3>
+        <h4 class="mx-8">PRICE ฿2,000/Day</h4>
+        <button class="mx-8 my-4 px-3 bg-gray-600 text-white hover:bg-blue-950"><a href="/view_detail/car1.html">View Detail</a></button>
+      </div>
+      <!-- car2 -->
+      <div class="mt-7">
+        <img src="/assets/bmw5.png" alt="" />
+        <h3 class="mx-8 my-4 font-black ">BMW 5 SERIES SEDAN</h3>
+        <h4 class="mx-8">PRICE ฿20,000/Day</h4>
+        <button class="mx-8 my-4 px-3 bg-gray-600 text-white hover:bg-blue-950"><a href="">View Detail</a></button>
+      </div>
+      <!-- car3 -->
+      <div class="mt-7" >
+        <img src="/assets/poshe.png" alt="" />
+        <h3 class="mx-8 my-4 font-black"> NEW PORSCHE 718 BOXSTER</h3>
+        <h4 class="mx-8">PRICE ฿30,000/Day</h4>
+        <button class="mx-8 my-4 px-3 bg-gray-600 text-white hover:bg-blue-950"><a href="">View Detail</a></button>
+      </div>
+    </section>
+  </body>
+</html>
