@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/script.js"></script>
+</head>
+<body>
+<nav>
+
+<!-- Top Navigation Menu -->
+<div class="bg-blue-950 text-white flex justify-between">
+  <a href="#home" class="active"><img src="/assets/logo.png" alt=""></a>
+ 
+  <a href="javascript:void(0);" class="flex flex-col justify-center mr-3" onclick="myFunction()">
+    <img class="md:hidden" src="/assets/menu.png" onClick="toggleMobileMenu();" alt="">
+  </a>
+  <!-- Desktop -->
+  <ul class="flex items-center gap-16 mr-6 max-md:hidden">
+    <li><a class="hover:underline" href="#">บริการเช่า</a></li>
+    <li><a class="hover:underline" href="$">ต้องการซื้อ</a></li>
+    <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
+    <li><a class="hover:underline" href="$"><img src="/assets/🦆 icon _United States_.png" alt=""></a></li>
+    <li><a class="hover:underline" href="#"><img src="/assets/login.png" alt=""></a></li>
+  </ul>
+</div>
+<!-- mobile -->
+<ul id="burger" class="flex flex-col items-center bg-gray-600 text-white text-4xl py-36 gap-16 md:hidden ">
+    <li><a class="" href="#news">บริการเช่า</a></li>
+    <a href="#contact">ต้องการซื้อ</a>
+    <a href="#about">ต้องการขาย</a>
+    <button class="bg-gray-800 py-2  w-full">login</button>
+</ul>
+</nav>
+</body>
+</html>

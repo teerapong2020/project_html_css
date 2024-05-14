@@ -12,27 +12,32 @@
         <a href="#"
         ><img class=" select-none " src="/assets/logo.png" alt=""
       /></a>
-    <nav >
-      <ul >
-        <!-- burger bar -->
-        <div  class="flex mt-3 gap-6 max-md:hidden "> 
-          <li><a class="underline  " href="/Rent .html">บริการเช่า</a></li>
-          <li><a class="hover:underline" href="/buy.html">ซื้อ</a></li>
-          <li><a class="hover:underline" href="/buy.html">ขาย</a></li>
-          <li>
-            <a href="#"
-              ><img
-                class="w-2/3"
-                src="/assets/🦆 icon _United States_.png"
-                alt=""
-            /></a>
-          </li>
-            <a href="#"><img class="w-2/3" src="/assets/login.png" alt="" /></a>
+      <nav>
+
+        <!-- Top Navigation Menu -->
+        <div class="bg-blue-950 text-white flex justify-between">
+          <a href="#home" class="active"><img src="/assets/logo.png" alt=""></a>
+         
+          <a href="javascript:void(0);" class="flex flex-col justify-center mr-3" onclick="myFunction()">
+            <img class="md:hidden" src="/assets/menu.png" onClick="toggleMobileMenu();" alt="">
+          </a>
+          <!-- Desktop -->
+          <ul class="flex items-center gap-16 mr-6 max-md:hidden">
+            <li><a class="hover:underline" href="#">บริการเช่า</a></li>
+            <li><a class="hover:underline" href="$">ต้องการซื้อ</a></li>
+            <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
+            <li><a class="hover:underline" href="$"><img src="/assets/🦆 icon _United States_.png" alt=""></a></li>
+            <li><a class="hover:underline" href="#"><img src="/assets/login.png" alt=""></a></li>
+          </ul>
         </div>
-        <li class="flex items-center mr-5 md:hidden select-none">
-          <a href="#"><img src="/assets/menu.png" onClick="toggleMobileMenu();" alt=""></a></li>
-      </ul>
-    </nav>
+        <!-- mobile -->
+        <ul id="burger" class="flex flex-col items-center bg-gray-600 text-white text-4xl py-36 gap-16 md:hidden ">
+            <li><a class="" href="#news">บริการเช่า</a></li>
+            <a href="#contact">ต้องการซื้อ</a>
+            <a href="#about">ต้องการขาย</a>
+            <button class="bg-gray-800 py-2  w-full">login</button>
+        </ul>
+        </nav>
     </header>
     <section class="flex my-9 max-md:flex justify-center">
         <!-- left -->
@@ -62,7 +67,7 @@
                 <li>เครื่องยนต์ที่ทรงพลัง: เครื่องยนต์ 4 สูบ 2.0 ลิตร ที่ให้ประสิทธิภาพสูงและการเร่งที่นุ่มนวล</li>
                 <div class="flex justify-between my-4">
                     <h2 class="md:hidden text-xl ">ราคา</h2>
-                    <h2 class="md:hidden text-xl font-black"> ฿3,000/วัน</h2>
+                    <h2 class="md:hidden text-xl font-black"> 2,000,000</h2>
                 </div>
                 <button class="md:hidden text-2xl bg-gray-600 w-full text-white pb-2 hover:bg-blue-950 ">Booking</button>
         </div>
@@ -71,7 +76,7 @@
         <div class="my-9 mx-9 max-md:hidden">
             <h1 class="mb-2 font-black text-xl"> Mercedes-Benz 
                 GLC 300 4MATIC</h1>
-            <h2 class="mb-2 text-xl">ราคา ฿3,000/วัน</h2>
+            <h2 class="mb-2 text-xl">ราคา 2,000,000</h2>
             <button class="bg-gray-500 text-white px-4 py-2 hover:bg-blue-950 ">Booking</button>
         </div>
     </section>
