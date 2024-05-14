@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   
+    <script src="/script.js"></script>
   </head>
   <body>
+    <header class="flex justify-between bg-blue-950 text-white items-center pt-2">
+        <a href="#"
+        ><img class=" select-none " src="/assets/logo.png" alt=""
+      /></a>
     <nav >
-      <ul class="flex justify-between bg-blue-950 text-white ">
-        <li>
-          <a href="#"
-            ><img class="bg-gray-300 select-none" src="/assets/logo.png" alt=""
-          /></a>
-        </li>
+      <ul >
         <!-- burger bar -->
-        <div id="burger" class="flex mt-3 gap-6 max-md:hidden "> 
+        <div  class="flex mt-3 gap-6 max-md:hidden "> 
           <li><a class="underline  " href="/Rent .html">บริการเช่า</a></li>
           <li><a class="hover:underline" href="/buy.html">ซื้อ</a></li>
           <li><a class="hover:underline" href="/buy.html">ขาย</a></li>
@@ -28,14 +27,13 @@
                 alt=""
             /></a>
           </li>
-          <li>
             <a href="#"><img class="w-2/3" src="/assets/login.png" alt="" /></a>
-          </li>
         </div>
         <li class="flex items-center mr-5 md:hidden select-none">
-          <a href="/Rent .html"><img src="/assets/menu.png" alt=""></a></li>
+          <a href="#"><img src="/assets/menu.png" onClick="toggleMobileMenu();" alt=""></a></li>
       </ul>
     </nav>
+    </header>
     <section class="flex my-9 max-md:flex justify-center">
         <!-- left -->
         <div class="w-1/2 text-xs mx-8 ">

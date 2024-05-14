@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <header class="flex justify-between bg-blue-950 text-white items-center pt-2">
+        <a href="#"
+        ><img class=" select-none " src="/assets/logo.png" alt=""
+      /></a>
+    <nav >
+      <ul >
+        <!-- burger bar -->
+        <div  class="flex mt-3 gap-6 max-md:hidden "> 
+          <li><a class="underline  " href="/Rent .html">บริการเช่า</a></li>
+          <li><a class="hover:underline" href="/buy.html">ซื้อ</a></li>
+          <li><a class="hover:underline" href="/buy.html">ขาย</a></li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-2/3"
+                src="/assets/🦆 icon _United States_.png"
+                alt=""
+            /></a>
+          </li>
+            <a href="#"><img class="w-2/3" src="/assets/login.png" alt="" /></a>
+        </div>
+        <li class="flex items-center mr-5 md:hidden select-none">
+          <a href="#"><img src="/assets/menu.png" onClick="toggleMobileMenu();" alt=""></a></li>
+      </ul>
+    </nav>
+    </header>
+    <section class="flex my-9 max-md:flex justify-center">
+        <!-- left -->
+        <div class="w-1/2 text-xs mx-8 ">
+            <img class="md:mx-8" src="/assets/benz/GLC 300 4MATIC/GLC 300 4MATIC.png" alt="">
+            <div class="flex gap-3 w-1/2 my-2 max-md:w-1/6 ">
+                <img src="/assets/benz/GLC 300 4MATIC/GLC 300_!.png" alt="">
+                <img src="/assets/benz/GLC 300 4MATIC/GLC 300_2.png" alt="">
+                <img src="/assets/benz/GLC 300 4MATIC/GLC 300_3.png" alt="">
+                <img src="/assets/benz/GLC 300 4MATIC/GLC 300_4.png" alt="">
+                <img src="/assets/benz/GLC 300 4MATIC/GLC 300_5.png" alt="">
+            </div>
+            <div class="md:hidden">
+                <h1 class="mb-2 font-black text-xl"> Mercedes-Benz 
+                    GLC 300 4MATIC</h1>
+                
+            </div>
+            <p class="mt-3">ด้วยดีไซน์ที่หรูหราและเรียบง่ายพร้อมกับประสิทธิภาพขับขี่ที่ยอดเยี่ยม GLC 300 4MATIC จะทำให้คุณตกหลุมรักไปตั้งแต่ที่คุณเห็นครั้งแรก! 
+                ไม่ว่าจะเป็นการเดินทางระหว่างเมืองหรือการผจญภัยในภูมิประเทศ รถยนต์ยนต์ยกสุดหรู Mercedes-Benz GLC 300 4MATIC 
+                เตรียมพร้อมเสร็จสมบูรณ์เพื่อประสบการณ์ขับขี่ที่ไม่เหมือนใคร!</p>
+                <h4 class="text-sm font-medium my-2">Feature</h4>
+                
+                <li>เทคโนโลยีขับเคลื่อน 4MATIC: ช่วยให้การขับขี่เสถียรและมีประสิทธิภาพในทุกสภาพถนน               </li>
+                <li>ดีไซน์ภายนอกที่สวยงาม: ด้วยเส้นลื่นและสปอยเลอร์ที่โดดเด่น</li>
+                <li>ห้องโดยสารที่สะดวกสบาย: มีพื้นที่กว้างขวางและเซ็ทที่มีการออกแบบเพื่อความสบาย</li>
+                <li>เทคโนโลยีและความปลอดภัย: ระบบเตือนการชนหลังและระบบนำทางที่สมบูรณ์</li>
+                <li>เครื่องยนต์ที่ทรงพลัง: เครื่องยนต์ 4 สูบ 2.0 ลิตร ที่ให้ประสิทธิภาพสูงและการเร่งที่นุ่มนวล</li>
+                <div class="flex justify-between my-4">
+                    <h2 class="md:hidden text-xl ">ราคา</h2>
+                    <h2 class="md:hidden text-xl font-black"> ฿3,000/วัน</h2>
+                </div>
+                <button class="md:hidden text-2xl bg-gray-600 w-full text-white pb-2 hover:bg-blue-950 ">Booking</button>
+        </div>
+      
+        <!-- right -->
+        <div class="my-9 mx-9 max-md:hidden">
+            <h1 class="mb-2 font-black text-xl"> Mercedes-Benz 
+                GLC 300 4MATIC</h1>
+            <h2 class="mb-2 text-xl">ราคา ฿3,000/วัน</h2>
+            <button class="bg-gray-500 text-white px-4 py-2 hover:bg-blue-950 ">Booking</button>
+        </div>
+    </section>
+  </body>
