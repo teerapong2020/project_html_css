@@ -1,3 +1,4 @@
+// navbar
 function myFunction() {
     var x = document.getElementById("burger");
     if (x.style.display === "flex") {
