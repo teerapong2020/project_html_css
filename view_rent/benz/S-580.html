@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/champ.js"></script>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <!-- Top Navigation Menu -->
+      <div class="bg-blue-950 text-white flex justify-between">
+        <a href="#home" ><img src="/assets/logo.png" alt=""></a>
+        
+        <a href="">
+          <img class="mt-7 ml-36 w-1/5 md:hidden" src="/assets/🦆 icon _United States_.png" alt="">
+        </a>
+        <a href="javascript:void(0);" class="flex flex-col justify-center mr-3" onclick="myFunction()">
+          <img class="md:hidden" src="/assets/menu.png" onClick="toggleMobileMenu();" alt="">
+        </a>
+  
+        <!-- Desktop -->
+        <ul class="flex items-center gap-16 mr-6 max-md:hidden">
+          <li><a class="hover:underline" href="/Rent .html">บริการเช่า</a></li>
+          <li><a class="hover:underline" href="/buying.html">ต้องการซื้อ</a></li>
+          <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
+          <li><a class="hover:underline" href="$"><img src="/assets/🦆 icon _United States_.png" alt=""></a></li>
+          <li><a class="hover:underline" href="#"><img src="/assets/login.png" alt=""></a></li>
+        </ul>
+        
+      </div>
+      
+      <!-- mobile -->
+      <ul id="burger" class="hidden flex flex-col items-center bg-gray-600 text-white text-4xl py-36 gap-16 md:hidden ">
+          <li><a class="" href="/Rent .html">บริการเช่า</a></li>
+          <li><a href="/buying.html">ต้องการซื้อ</a></li>
+          <li><a href="#">ต้องการขาย</a></li>
+          <button class="bg-gray-800 py-2  w-full">login</button>
+      </ul>
+    </nav>
+    </header>
+
+    <section class="flex my-9 max-md:flex justify-center">
+        <!-- left -->
+         <div class=" relative md:w-1/2">
+          <div class="show ">
+            <img  src="/assets/benz/S 580 4MATIC/S580_003-main.jpg" class="w-full ">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/benz/S 580 4MATIC/S 580 4MATIC-1.jpg" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/benz/S 580 4MATIC/S 580 4MATIC-2.jpg" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/benz/S 580 4MATIC/S 580 4MATIC-3.jpg" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/benz/S 580 4MATIC/S 580 4MATIC-4.jpg" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/benz/S 580 4MATIC/S 580 4MATIC-5.jpg" class="w-full">
+          </div>
+      
+          <div class="absolute w-full flex justify-between px-4 top-1/4 max-md:hidden text-3xl font-black  select-none">
+            <a class="cursor-pointer  backdrop-blur-sm bg-white/30  bg-gray-800	rounded-full px-4 hover:text-gray-500  " onclick="plusSlides(-1)">❮</a>
+            <a class="cursor-pointer backdrop-blur-sm bg-white/30  bg-gray-800 rounded-full	 px-4 hover:text-gray-500 " onclick="plusSlides(1)">❯</a>
+          </div>
+          
+          <div class=" flex w-1/6 md: my-2">
+          <img class="silde cursor-pointer" src="/assets/benz/S 580 4MATIC/S580_003-main.jpg" onclick="currentSlide(1)" alt="">
+          <img class="silde cursor-pointer" src="/assets/benz/S 580 4MATIC/S 580 4MATIC-1.jpg" onclick="currentSlide(2)" alt="">
+          <img class="silde cursor-pointer" src="/assets/benz/S 580 4MATIC/S 580 4MATIC-2.jpg" onclick="currentSlide(3)" alt="">
+          <img class="silde cursor-pointer" src="/assets/benz/S 580 4MATIC/S 580 4MATIC-3.jpg" onclick="currentSlide(4)" alt="">
+          <img class="silde cursor-pointer" src="/assets/benz/S 580 4MATIC/S 580 4MATIC-4.jpg" onclick="currentSlide(5)" alt="">
+          <img class="silde cursor-pointer" src="/assets/benz/S 580 4MATIC/S 580 4MATIC-5.jpg" onclick="currentSlide(6)" alt="">
+        </div>
+
+        <div class="md:hidden">
+          <h1 class="mb-2 font-black text-xl mx-4 my-4"> Mercedes-Benz 
+              S-580 4MATIC</h1>
+          
+      </div>
+      <section>
+        <main>
+      <p class="mt-3 mx-4 ">
+        สัมผัสความหรูหราและนวัตกรรมระดับโลกกับ Mercedes-Benz S-580 4MATIC ซีดานสุดหรูในตระกูล S-Class ที่มาพร้อมการออกแบบที่ประณีตและเทคโนโลยีล้ำสมัยเพื่อตอบสนองทุกความต้องการของคุณ
+      </p>
+          <h4 class="text-xl font-medium my-2 mx-4">Feature</h4>
+          
+          <li class="mx-4 max-md:my-2">เครื่องยนต์ V8 ขนาด 4.0 ลิตร เทอร์โบคู่ กำลัง 496 แรงม้า   </li>
+          <li class="snap-center mx-4 max-md:my-2" >ระบบขับเคลื่อน 4MATIC ทุกล้อ</li>
+          <li class="mx-4 max-md:my-2">ระบบไฮบริดเบา EQ Boost</li>
+          <li class="mx-4 max-md:my-2">ระบบเสียง Burmester 3D</li>
+          <li class="mx-4 max-md:my-2">เบาะปรับได้พร้อมฟังก์ชันนวดและระบายความร้อน</li>
+        </main>
+          <div class="flex justify-between my-4 mx-4">
+              <h2 class="md:hidden text-xl ">ราคา</h2>
+              <h2 class="md:hidden text-xl font-black"> ฿8,000/วัน</h2>
+          </div>
+          <button class="md:hidden text-2xl bg-gray-600 w-full text-white pb-2 hover:bg-blue-950 ">Booking</button>
+      </section>
+    </div> 
+
+        </div>
+       
+           
+        <!-- right -->
+        <div class="my-9 mx-9 max-md:hidden">
+            <h1 class="mb-2 font-black text-xl"> Mercedes-Benz 
+                GLC 300 4MATIC</h1>
+            <h2 class="mb-2 text-xl">ราคา ฿8,000/วัน</h2>
+            <button class="bg-gray-500 text-white px-4 py-2 hover:bg-blue-950 ">Booking</button>
+        </div>
+    </section>
+  </body>

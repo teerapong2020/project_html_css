@@ -1,4 +1,4 @@
-// navbar
+// burger bar
 function myFunction() {
     var x = document.getElementById("burger");
     if (x.style.display === "flex") {
@@ -32,10 +32,7 @@ function myFunction() {
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" opacity-100", " opacity-50");
-    }
-    
-    slides[slideIndex-1].style.display = "flex";
+    slides[slideIndex-1].style.display = "flex"; 
     
   }
+
