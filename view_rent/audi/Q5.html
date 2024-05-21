@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/champ.js"></script>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <!-- Top Navigation Menu -->
+      <div class="bg-blue-950 text-white flex justify-between">
+        <a href="#home" ><img src="/assets/logo.png" alt=""></a>
+        
+        <div class="flex gap-8">
+          <a href="">
+            <img class="mt-7 ml-36 w-1/5 md:hidden" src="/assets/🦆 icon _United States_.png" alt="">
+          </a>
+          <a href="javascript:void(0);" class="flex flex-col justify-center mr-3" onclick="myFunction()">
+            <img class="md:hidden" src="/assets/menu.png" onClick="toggleMobileMenu();" alt="">
+          </a>
+          </div>
+  
+        <!-- Desktop -->
+        <ul class="flex items-center gap-16 mr-6 max-md:hidden">
+          <li><a class="hover:underline" href="/Rent .html">บริการเช่า</a></li>
+          <li><a class="hover:underline" href="/buying.html">ต้องการซื้อ</a></li>
+          <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
+          <li><a class="hover:underline" href="$"><img src="/assets/🦆 icon _United States_.png" alt=""></a></li>
+          <li><a class="hover:underline" href="#"><img src="/assets/login.png" alt=""></a></li>
+        </ul>
+        
+      </div>
+      
+      <!-- mobile -->
+      <ul id="burger" class="hidden flex flex-col items-center bg-gray-600 text-white text-4xl py-36 gap-16 md:hidden ">
+          <li><a class="hover:underline" href="/Rent .html">บริการเช่า</a></li>
+          <li><a class="hover:underline" href="/buying.html">ต้องการซื้อ</a></li>
+          <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
+          <button class="bg-gray-800 py-2  w-full">login</button>
+      </ul>
+    </nav>
+    </header>
+
+    <section class="flex my-9 max-md:flex justify-center">
+        <!-- left -->
+         <div class=" relative  md:w-1/2">
+          <div class="show ">
+            <img  src="/assets/Audi/Q5/Audi_Q5_main.webp" class="w-full ">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Audi/Q5/Audi_Q5_1.webp" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Audi/Q5/Audi_Q5_2.webp" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Audi/Q5/Audi_Q5_3.webp" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Audi/Q5/Audi_Q5_4.webp" class="w-full">
+          </div>
+          <div class="show hidden">
+            <img src="/assets/Audi/Q5/Audi_Q5_5.webp" class="w-full">
+          </div>
+      
+          <div class="absolute w-full flex justify-between px-4 top-1/4 max-md:hidden text-3xl font-black  select-none">
+            <a class="cursor-pointer  backdrop-blur-sm bg-white/30  bg-gray-800	rounded-full px-4 hover:text-gray-500  " onclick="plusSlides(-1)">❮</a>
+            <a class="cursor-pointer backdrop-blur-sm bg-white/30  bg-gray-800 rounded-full	 px-4 hover:text-gray-500 " onclick="plusSlides(1)">❯</a>
+          </div>
+          
+          <!-- demo silde -->
+          <div class=" flex w-1/6 my-2 ">
+          <img class="silde cursor-pointer" src="/assets/Audi/Q5/Audi_Q5_main.webp" onclick="currentSlide(1)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Audi/Q5/Audi_Q5_1.webp" onclick="currentSlide(2)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Audi/Q5/Audi_Q5_2.webp" onclick="currentSlide(3)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Audi/Q5/Audi_Q5_3.webp" onclick="currentSlide(4)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Audi/Q5/Audi_Q5_4.webp" onclick="currentSlide(5)" alt="">
+          <img class="silde cursor-pointer" src="/assets/Audi/Q5/Audi_Q5_5.webp" onclick="currentSlide(6)" alt="">
+        </div>
+
+        <div class="md:hidden">
+          <h1 class="mb-2 font-black text-xl mx-4 my-4"> Audi 
+              Q5</h1>
+          
+      </div>
+      <section>
+        <main>
+      <p class="mt-3 mx-4 ">
+        ลุคที่หรูหรา สมรรถนะที่เหนือระดับ และเทคโนโลยีที่ทันสมัย ทุกอย่างคุณจะพบได้ใน Audi Q5
+      </p>
+          <h4 class="text-xl font-medium my-2 mx-4">Feature</h4>
+          
+          <li class="mx-4 max-md:my-2">ดีไซน์ภายนอกที่เป็นเอกลักษณ์ของ Audi ด้วยเส้นสายที่สวยงามและความหรูหรา             </li>
+          <li class="snap-center mx-4 max-md:my-2" >ภายในห้องโดยสารที่สวยงามและมีวัสดุคุณภาพสูง</li>
+          <li class="mx-4 max-md:my-2">Audi Virtual Cockpit และ MMI Touch display สำหรับควบคุมระบบเทคโนโลยีและนำทาง</li>
+          <li class="mx-4 max-md:my-2">Audi pre sense city และ Lane Departure WarningG</li>
+          <li class="mx-4 max-md:my-2">สวิตช์โหมดขับขี่หลายรูปแบบ เช่น Comfort, Dynamic, และ Off-road</li>
+        </main>
+          <div class="flex justify-between my-4 mx-4">
+              <h2 class="md:hidden text-xl ">ราคา</h2>
+              <h2 class="md:hidden text-xl font-black"> ฿3,000/วัน</h2>
+          </div>
+          <button class="md:hidden text-2xl bg-gray-600 w-full text-white pb-2 hover:bg-blue-950 ">Booking</button>
+      </section>
+    </div> 
+
+        </div>
+       
+           
+        <!-- right -->
+        <div class="my-9 mx-9 max-md:hidden">
+            <h1 class="mb-2 font-black text-xl">AUdi
+                Q5</h1>
+            <h2 class="mb-2 text-xl">ราคา ฿3,000/วัน</h2>
+            <button class="bg-gray-500 text-white px-4 py-2 hover:bg-blue-950 ">Booking</button>
+        </div>
+    </section>
+  </body>
