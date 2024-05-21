@@ -1,14 +1,41 @@
 
 // API link navbar for all page
-fetch('navbar.html')
-.then(res => res.text())
-.then(text => {
-    let oldelem = document.querySelector("script#replace_with_navbar");
-    let newelem = document.createElement("div");
-    newelem.innerHTML = text;
-    oldelem.parentNode.replaceChild(newelem, oldelem);
-})
-.catch(error => console.error('Error fetching the nav:', error));
+document.addEventListener('DOMContentLoaded', function() {
+  let navbarPath = 'navbar.html'; // เส้นทางสำหรับไฟล์ navbar
+
+  // ตรวจสอบว่าไฟล์ปัจจุบันอยู่ในโฟลเดอร์ไหน
+  if (location.pathname.includes('/view_rent/benz')) {
+      navbarPath = '/navbar.html'; 
+  } else if (location.pathname.includes('/view_rent/audi')) {
+      navbarPath = '/navbar.html'; 
+  } else if (location.pathname.includes('/view_rent/bmw')) {
+    navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/jaguar')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/land_pover')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/mini')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/peugeot')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/porsche')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/tesla')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/Volkswagen')) {
+  navbarPath = '/navbar.html'; 
+}   else if (location.pathname.includes('/view_rent/volvo')) {
+  navbarPath = '/navbar.html'; 
+}   
+
+  fetch(navbarPath)
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+});
+
 
 
 // burger bar
